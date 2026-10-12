@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fitness Log</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Fitness Log</h1>
+  <p class="version">Version 1</p>
+  <form id="f">
+    <label for="ex">Exercise</label>
+    <input id="ex" required maxlength="60" placeholder="Push-ups">
+    <label for="mins">Minutes</label>
+    <input id="mins" type="number" min="1" max="600" required value="20">
+    <button>Add workout</button>
+  </form>
+  <p>Total this week: <b id="total">0</b> minutes</p>
+  <ul id="list"></ul>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
